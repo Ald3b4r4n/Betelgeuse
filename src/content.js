@@ -17,7 +17,7 @@
   'use strict';
 
   const STATS = { hidden: 0, skips: 0, popupsBlocked: 0 };
-  const STYLE_ID = 'xv-adblock-css';
+  const STYLE_ID = 'betelgeuse-css';
   const SKIP_TEXT = /skip|pular/i;
 
   // Seletores cosméticos genéricos. Propositalmente conservadores:
@@ -68,8 +68,8 @@
 
   function hide(el) {
     if (!el || !(el instanceof Element)) return;
-    if (el.dataset.xvHidden) return;
-    el.dataset.xvHidden = '1';
+    if (el.dataset.betelgeuseHidden) return;
+    el.dataset.betelgeuseHidden = '1';
     el.style.setProperty('display', 'none', 'important');
     STATS.hidden += 1;
   }
@@ -163,12 +163,12 @@
     setInterval(() => sweep(document), 5000); // Rede de segurança.
   }
 
-  document.addEventListener('xv-popup-blocked', () => {
+  document.addEventListener('betelgeuse-popup-blocked', () => {
     STATS.popupsBlocked += 1;
   });
 
   chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
-    if (msg && msg.type === 'xv-stats') sendResponse({ ...STATS });
+    if (msg && msg.type === 'betelgeuse-stats') sendResponse({ ...STATS });
     return true;
   });
 

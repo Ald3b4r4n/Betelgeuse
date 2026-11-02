@@ -43,7 +43,7 @@
   window.open = function xvGuardedOpen(url, target, features) {
     const dest = url === undefined || url === null ? '' : String(url);
     if (Date.now() < suspiciousClickUntil || (dest !== '' && AD_HINT.test(dest))) {
-      document.dispatchEvent(new CustomEvent('xv-popup-blocked'));
+      document.dispatchEvent(new CustomEvent('betelgeuse-popup-blocked'));
       return null;
     }
     return rawOpen(url, target, features);

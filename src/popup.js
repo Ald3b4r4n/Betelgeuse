@@ -30,7 +30,7 @@
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const id = tabs && tabs[0] ? tabs[0].id : undefined;
     if (id === undefined) return;
-    chrome.tabs.sendMessage(id, { type: 'xv-stats' }, (resp) => {
+    chrome.tabs.sendMessage(id, { type: 'betelgeuse-stats' }, (resp) => {
       if (chrome.runtime.lastError || !resp) return; // Fora do xvideos: mantém "–".
       elHidden.textContent = String(resp.hidden);
       elSkips.textContent = String(resp.skips);
