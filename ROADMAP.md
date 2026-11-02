@@ -1,6 +1,6 @@
 # Roadmap — Betelgeuse
 
-> Status atual: **v0.3.0** — histórico ampliado entregue (ver abaixo).
+> Status atual: **v0.3.1** — correção da limpeza do histórico (ver abaixo).
 > Os seletores e regras atuais são um ponto de partida genérico; o
 > refinamento com o DOM/tráfego real do site é a Fase 0 abaixo.
 
@@ -18,6 +18,25 @@
       em qualquer buscador (`q/query/text/search/p`, URL ou título) e
       "conto(s) erótico(s)" + variações na URL, título ou query.
 - [x] `purgeExisting()` busca os 6 termos e filtra com a mesma regra.
+
+## v0.3.1 — Correção: entradas que escapavam (entregue)
+
+- [x] **Causa raiz:** `onVisited` dispara antes do título existir, então a
+      decisão por título falhava e a entrada ficava no histórico (URLs sem
+      palavra-chave, como `contoseroticos.com`).
+- [x] Rechecagem pontual (3 s e 10 s) relendo o título já gravado.
+- [x] Varredura periódica (`chrome.alarms`, 1 min) dos últimos 15 min como
+      rede de segurança (cobre service worker encerrado).
+- [x] `onInstalled`/`onStartup` passam a varrer o histórico inteiro
+      (`text: ''`) em vez de buscar 6 termos — pega títulos que não contêm a
+      palavra-chave pesquisada.
+- [x] Regex de "conto(s) erótico(s)" passa a casar a forma colada
+      (`contoseroticos`), comum em domínios/slugs.
+- [x] Lista explícita de domínios (`BLOCKED_HOSTS`) e de intermediários de
+      popup/redirecionamento (`BLOCKED_REDIRECT_HOSTS`), incluindo títulos
+      típicos de spam de notificação ("Click Allow").
+- [x] `xvideos` passa a exigir limite de palavra (não casa `notxvideos.com`).
+- [x] Nova permissão `alarms` (sem aviso ao usuário) documentada no README.
 
 ## Fase 0 — Mapeamento real do site (pré-requisito das próximas versões)
 
