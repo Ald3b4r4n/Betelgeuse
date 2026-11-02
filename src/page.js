@@ -1,4 +1,4 @@
-/* XV AdBlock — page script (mundo MAIN da página).
+/* Betelgeuse — page script (mundo MAIN da página).
  *
  * Injetado via <script> pelo content script porque content scripts rodam em
  * mundo isolado e NÃO conseguem interceptar o `window.open` visto pelos

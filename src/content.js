@@ -1,4 +1,4 @@
-/* XV AdBlock — content script (mundo ISOLADO).
+/* Betelgeuse — content script (mundo ISOLADO).
  *
  * Roda em todas as páginas de *.xvideos.com e faz três coisas:
  *  1. Filtro cosmético: oculta banners, overlays, iframes e slots de anúncio.

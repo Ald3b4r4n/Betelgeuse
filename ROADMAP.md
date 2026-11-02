@@ -1,4 +1,4 @@
-# Roadmap — XV AdBlock
+# Roadmap — Betelgeuse
 
 > Status atual: **v0.1.0** — MVP heurístico funcional. Os seletores e regras
 > atuais são um ponto de partida genérico; o refinamento com o DOM/tráfego

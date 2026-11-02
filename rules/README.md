@@ -1,4 +1,4 @@
-# XV AdBlock — conjunto inicial (heurístico) de regras de rede
+# Betelgeuse — conjunto inicial (heurístico) de regras de rede
 #
 # Este arquivo documenta a lógica do ruleset `rules/ads.json`.
 # O JSON em si não aceita comentários, então as notas ficam aqui.

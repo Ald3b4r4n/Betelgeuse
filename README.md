@@ -1,4 +1,4 @@
-# XV AdBlock
+# Betelgeuse
 
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![Versão](https://img.shields.io/badge/versão-0.1.0-orange)](ROADMAP.md)
@@ -34,7 +34,7 @@ banners, iframes patrocinados e popups/popunders.
 
 1. Baixe ou clone este repositório:
    ```sh
-   git clone https://github.com/Ald3b4r4n/xvideos-adblock.git
+   git clone https://github.com/Ald3b4r4n/Betelgeuse.git
    ```
 2. Abra `chrome://extensions` no Chrome.
 3. Ative o **Modo do desenvolvedor** (canto superior direito).

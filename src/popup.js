@@ -1,4 +1,4 @@
-/* XV AdBlock — popup: toggle liga/desliga + estatísticas da aba atual. */
+/* Betelgeuse — popup: toggle liga/desliga + estatísticas da aba atual. */
 (() => {
   'use strict';
 
