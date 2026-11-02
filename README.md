@@ -1,7 +1,7 @@
 # Betelgeuse
 
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[![Versão](https://img.shields.io/badge/versão-0.1.0-orange)](ROADMAP.md)
+[![Versão](https://img.shields.io/badge/versão-0.2.0-orange)](ROADMAP.md)
 [![Licença: MIT](https://img.shields.io/badge/licença-MIT-green)](LICENSE)
 
 Extensão de código aberto para Google Chrome (Manifest V3) que bloqueia
@@ -27,6 +27,9 @@ banners, iframes patrocinados e popups/popunders.
   por cliques em anúncios, sem quebrar navegação legítima.
 - 🎛️ **Popup com toggle** — liga/desliga com um clique + contadores
   (itens ocultados, pre-rolls pulados, popups barrados) da aba atual.
+- 🕵️ **Sem rastros no histórico** — apaga automaticamente as visitas ao
+  xvideos.com do histórico do navegador (e limpa entradas antigas ao
+  instalar/iniciar). Respeita o toggle liga/desliga.
 - 🔒 **Escopo mínimo** — atua somente em `*.xvideos.com`, sem telemetria e
   sem coleta de dados.
 
@@ -112,6 +115,7 @@ passo de inspeção com DevTools.
 |---|---|
 | `declarativeNetRequest` | Bloquear requisições de anúncios (sem ler conteúdo). |
 | `storage` | Persistir o toggle liga/desliga localmente. |
+| `history` | Apagar visitas ao xvideos.com do histórico (somente esse domínio). |
 | Host `*.xvideos.com` | Único site onde a extensão atua. |
 
 A extensão **não coleta, transmite ou armazena** nenhum dado do usuário.

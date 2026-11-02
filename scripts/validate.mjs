@@ -64,6 +64,9 @@ if (manifest) {
   for (const wr of manifest.web_accessible_resources || []) {
     for (const r of wr.resources || []) mustExist(r);
   }
+  if (manifest.background && manifest.background.service_worker) {
+    mustExist(manifest.background.service_worker);
+  }
   if (manifest.action && manifest.action.default_popup) {
     mustExist(manifest.action.default_popup);
   }

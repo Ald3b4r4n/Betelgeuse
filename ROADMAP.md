@@ -1,8 +1,15 @@
 # Roadmap — Betelgeuse
 
-> Status atual: **v0.1.0** — MVP heurístico funcional. Os seletores e regras
+> Status atual: **v0.2.0** — MVP heurístico funcional. Os seletores e regras
 > atuais são um ponto de partida genérico; o refinamento com o DOM/tráfego
 > real do site é a Fase 0 abaixo.
+
+## v0.2.0 — Sem rastros no histórico (entregue)
+
+- [x] Service worker (`src/background.js`) apaga visitas ao xvideos.com via
+      `chrome.history.onVisited` + `deleteUrl` (respeita o toggle).
+- [x] Limpeza de entradas pré-existentes em `onInstalled`/`onStartup`.
+- [x] Permissão `history` documentada no README (gera aviso ao instalar).
 
 ## Fase 0 — Mapeamento real do site (pré-requisito das próximas versões)
 
@@ -30,7 +37,7 @@ extensão instalada e acesso ao site-alvo (conteúdo adulto, 18+).
 Entregável: atualizar `rules/ads.json`, `AD_SELECTORS` em `src/content.js`
 e a tabela de intocáveis neste arquivo/issue.
 
-## v0.2.0 — Refinamento com dados reais
+## v0.3.0 — Refinamento com dados reais
 
 - [ ] Regras DNR com domínios exatos observados na Fase 0.
 - [ ] Regras `allow` de proteção para vídeo/CDN/funcionais.
@@ -39,7 +46,7 @@ e a tabela de intocáveis neste arquivo/issue.
 - [ ] Lógica de skip ajustada ao player real (seletor do botão, timing).
 - [ ] Regressão manual: home, busca, categoria, 5 vídeos, toggle on/off.
 
-## v0.3.0 — Robustez
+## v0.4.0 — Robustez
 
 - [ ] Throttle/debounce revisado (impacto em CPU em páginas longas).
 - [ ] Tratamento de anti-adblock, se o site detectar a extensão
