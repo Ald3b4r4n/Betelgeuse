@@ -1,7 +1,7 @@
 # Betelgeuse
 
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[![Versão](https://img.shields.io/badge/versão-0.2.0-orange)](ROADMAP.md)
+[![Versão](https://img.shields.io/badge/versão-0.3.0-orange)](ROADMAP.md)
 [![Licença: MIT](https://img.shields.io/badge/licença-MIT-green)](LICENSE)
 
 Extensão de código aberto para Google Chrome (Manifest V3) que bloqueia
@@ -27,9 +27,11 @@ banners, iframes patrocinados e popups/popunders.
   por cliques em anúncios, sem quebrar navegação legítima.
 - 🎛️ **Popup com toggle** — liga/desliga com um clique + contadores
   (itens ocultados, pre-rolls pulados, popups barrados) da aba atual.
-- 🕵️ **Sem rastros no histórico** — apaga automaticamente as visitas ao
-  xvideos.com do histórico do navegador (e limpa entradas antigas ao
-  instalar/iniciar). Respeita o toggle liga/desliga.
+- 🕵️ **Sem rastros no histórico** — apaga automaticamente do histórico do
+  navegador: visitas ao xvideos.com, pesquisas com menção a xvideos em
+  qualquer buscador e pesquisas/visitas com "conto(s) erótico(s)" e
+  variações (respeita o toggle liga/desliga; limpa entradas antigas ao
+  instalar/iniciar).
 - 🔒 **Escopo mínimo** — atua somente em `*.xvideos.com`, sem telemetria e
   sem coleta de dados.
 
@@ -58,6 +60,7 @@ Duas camadas complementares, seguindo a plataforma Manifest V3:
 | Bloqueio de rede | `rules/ads.json` | Regras estáticas `declarativeNetRequest` (`block`) com `initiatorDomains: ["xvideos.com"]`. Padrão "permitir tudo, bloquear só o listado" — sem risco de página em branco. |
 | Filtro cosmético + player | `src/content.js` | Content script (mundo isolado): CSS cosmético, varredura do DOM, `MutationObserver`, auto-skip de pre-roll e contadores. |
 | Contenção de popups | `src/page.js` | Page script (mundo MAIN, injetado via `<script>`): envolve `window.open` com heurística conservadora. Necessário porque o mundo isolado não intercepta o `window.open` da página. |
+| Sem rastros | `src/background.js` | Service worker: apaga do histórico visitas ao xvideos.com, buscas com menção a xvideos e "conto(s) erótico(s)" e variações (URL/título/query, qualquer buscador), via `onVisited` + limpeza em `onInstalled`/`onStartup`. |
 | Interface | `src/popup.html`, `src/popup.js` | Toggle liga/desliga (persistido em `chrome.storage`) + estatísticas via mensagens. |
 
 Detalhes do ruleset em [`rules/README.md`](rules/README.md).
@@ -115,7 +118,7 @@ passo de inspeção com DevTools.
 |---|---|
 | `declarativeNetRequest` | Bloquear requisições de anúncios (sem ler conteúdo). |
 | `storage` | Persistir o toggle liga/desliga localmente. |
-| `history` | Apagar visitas ao xvideos.com do histórico (somente esse domínio). |
+| `history` | Apagar do histórico visitas ao xvideos.com, buscas com menção a xvideos e conteúdo de "conto(s) erótico(s)" (somente esses alvos). |
 | Host `*.xvideos.com` | Único site onde a extensão atua. |
 
 A extensão **não coleta, transmite ou armazena** nenhum dado do usuário.

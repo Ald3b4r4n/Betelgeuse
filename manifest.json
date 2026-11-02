@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Betelgeuse",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Bloqueia anúncios (pre-roll, overlays, banners e popups) em xvideos.com.",
   "homepage_url": "https://github.com/Ald3b4r4n/Betelgeuse",
   "minimum_chrome_version": "88",

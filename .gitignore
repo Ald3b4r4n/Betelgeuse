@@ -3,3 +3,4 @@ Thumbs.db
 *.zip
 *.crx
 node_modules/
+_metadata/
