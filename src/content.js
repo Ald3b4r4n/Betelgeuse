@@ -1,59 +1,129 @@
 /* Betelgeuse — content script (mundo ISOLADO).
  *
- * Roda em todas as páginas de *.xvideos.com e faz três coisas:
+ * Roda nos sites de `src/sites.js` e faz três coisas:
  *  1. Filtro cosmético: oculta banners, overlays, iframes e slots de anúncio.
  *  2. Auto-skip: clica automaticamente em botões "skip/pular" de pre-roll.
  *  3. Telemetria local: conta itens ocultados, skips e popups barrados
  *     (estes últimos detectados pelo page script via evento DOM).
  *
- * NOTA: este script NÃO enxerga as variáveis JS da página (mundo isolado).
- * O bloqueio de `window.open` vive em `src/page.js`, injetado no mundo MAIN.
+ * O guard de `window.open` vive em `src/page.js`, que roda no mundo MAIN
+ * como content script separado (manifest `world: "MAIN"`). O content script
+ * liga a flag `data-betelgeuse-enabled` no <html> para o page script saber
+ * se o toggle está ativo.
  *
- * Os seletores abaixo são um conjunto inicial HEURÍSTICO. A Fase 0 do
- * ROADMAP (inspeção real com DevTools) deve refiná-los com seletores
- * observados no DOM real do site.
+ * Os seletores abaixo são heurísticos. Refine com o DOM real de cada site
+ * conforme a Fase 0 do ROADMAP.
  */
 (() => {
   'use strict';
 
   const STATS = { hidden: 0, skips: 0, popupsBlocked: 0 };
   const STYLE_ID = 'betelgeuse-css';
-  const SKIP_TEXT = /skip|pular/i;
+  const SKIP_TEXT =
+    /skip|pular|pular (?:an[úu]ncio|propaganda)|skip ad|close ad|fechar (?:an[úu]ncio|propaganda)/i;
+  const SKIP_TO_CONTENT_RE =
+    /skip to (?:main )?content|pular para o (?:conte[úu]do|conteudo)/i;
 
-  // Seletores cosméticos genéricos. Propositalmente conservadores:
-  // nada como [class*="ad"], que daria falso-positivo em "header", "load" etc.
+  // Seletores cosméticos genéricos. Evitamos coisas como [class*="ad"] (daria
+  // falso-positivo em "header", "load" etc.) e "iframe[src*=ads]" (casaria
+  // "uploads"). Preferimos nomes de redes, caminhos de anúncio e classes
+  // exatas.
   const AD_SELECTORS = [
-    'iframe[src*="ads"]',
     'iframe[src*="doubleclick"]',
+    'iframe[src*="googlesyndication"]',
+    'iframe[src*="googleadservices"]',
     'iframe[src*="exoclick"]',
+    'iframe[src*="exosrv"]',
     'iframe[src*="trafficjunky"]',
     'iframe[src*="trafficstars"]',
+    'iframe[src*="trafficfactory"]',
+    'iframe[src*="juicyads"]',
+    'iframe[src*="adsterra"]',
+    'iframe[src*="clickadu"]',
+    'iframe[src*="hilltopads"]',
+    'iframe[src*="realsrv"]',
+    'iframe[src*="popads"]',
+    'iframe[src*="popcash"]',
+    'iframe[src*="propeller"]',
+    'iframe[src*="amazon-adsystem"]',
+    'iframe[src*="media.net"]',
+    'iframe[src*="revcontent"]',
     'iframe[src*="banner"]',
     'iframe[src*="sponsor"]',
     'iframe[src*="vast"]',
+    'iframe[src*="vmap"]',
+    'iframe[src*="adserver"]',
+    'iframe[src*="adframe"]',
+    'iframe[src*="/ad/"]',
+    'iframe[src*="ads."]',
+    'iframe[src*="ads/"]',
     '[id="ad"]',
     '[id="ads"]',
     '[id^="ad-"]',
     '[id$="-ad"]',
     '[id*="-ad-"]',
+    '[class~="ad"]',
+    '[class~="ads"]',
     '[class*="sponsored"]',
+    '[class*="sponsor"]',
     '[class*="advertisement"]',
+    '[class*="advert"]',
+    '[id*="advert"]',
     '[class*="ad-overlay"]',
     '[class*="adOverlay"]',
     '[class*="video-ad"]',
     '[class*="videoAd"]',
     '[class*="preroll"]',
     '[class*="pre-roll"]',
+    '[id*="preroll"]',
+    '[id*="pre-roll"]',
     '[class*="ad-slot"]',
     '[class*="adSlot"]',
+    '[class*="ad-unit"]',
+    '[class*="adUnit"]',
     '[class*="ad-container"]',
     '[class*="adContainer"]',
+    '[class*="ad-placeholder"]',
+    '[class*="adPlaceholder"]',
+    '[class*="native-ad"]',
+    '[class*="nativeAd"]',
+    '[class*="popunder"]',
+    '[class*="adsbox"]',
+    '[class*="ads-box"]',
+    '[data-ad]',
+    '[data-ad-slot]',
+    '[data-google-query-id]',
+    'ins.adsbygoogle',
+    'div[id^="div-gpt-ad"]',
+    '[id*="google_ads"]',
+    '[class*="google-ad"]',
+    '[id*="taboola"]',
+    '[class*="taboola"]',
+    '[id*="outbrain"]',
+    '[class*="outbrain"]',
+    '[id*="revcontent"]',
+    '[class*="zergnet"]',
     'a[href*="exoclick"]',
+    'a[href*="exosrv"]',
     'a[href*="trafficjunky"]',
     'a[href*="trafficstars"]',
+    'a[href*="trafficfactory"]',
+    'a[href*="juicyads"]',
+    'a[href*="adsterra"]',
+    'a[href*="clickadu"]',
+    'a[href*="hilltopads"]',
     'a[href*="popads"]',
     'a[href*="popcash"]',
-    'a[href*="doubleclick"]'
+    'a[href*="propellerads"]',
+    'a[href*="doubleclick"]',
+    'a[href*="googlesyndication"]',
+    'a[href*="googleadservices"]',
+    'a[href*="realsrv"]',
+    'a[href*="adnxs"]',
+    'a[href*="criteo"]',
+    'a[href*="taboola"]',
+    'a[href*="outbrain"]',
+    'a[href*="mgid"]'
   ];
 
   function cls(el) {
@@ -78,23 +148,15 @@
     if (document.getElementById(STYLE_ID)) return;
     const style = document.createElement('style');
     style.id = STYLE_ID;
-    style.textContent = AD_SELECTORS.map((s) => `${s}{display:none!important}`).join('\n');
+    style.textContent = AD_SELECTORS.map(
+      (s) => `${s}{display:none!important}`
+    ).join('\n');
     (document.head || document.documentElement).appendChild(style);
   }
 
-  // Injeta o page script (mundo MAIN) para conter window.open abusivo.
-  function injectPageScript() {
-    try {
-      const s = document.createElement('script');
-      s.src = chrome.runtime.getURL('src/page.js');
-      s.onload = () => s.remove();
-      (document.head || document.documentElement).appendChild(s);
-    } catch {
-      // Sem acesso a chrome.runtime (página restrita): segue sem page script.
-    }
-  }
-
   function sweep(scope) {
+    // Se a página removeu o <style> (anti-adblock), recoloca.
+    if (!document.getElementById(STYLE_ID)) injectCss();
     const root = scope instanceof Element ? scope : document;
     for (const sel of AD_SELECTORS) {
       let nodes;
@@ -138,16 +200,24 @@
     let nodes;
     try {
       nodes = document.querySelectorAll(
-        'button, a, [role="button"], [class*="skip" i], [id*="skip" i]'
+        'button, [role="button"], [class*="skip" i], [id*="skip" i], ' +
+          '[aria-label*="skip" i], [title*="skip" i]'
       );
     } catch {
       return;
     }
     for (const el of nodes) {
-      const label = ((el.innerText || el.textContent || '').trim()).slice(0, 40);
-      const selfHint = /skip/i.test(`${el.id} ${cls(el)}`);
+      const label = ((el.innerText || el.textContent || '').trim()).slice(0, 60);
+      if (SKIP_TO_CONTENT_RE.test(label)) continue;
+      if (el.matches('.skip-link, [class*="skip-link" i]')) continue;
+
+      const hint = `${el.id || ''} ${cls(el)} ${
+        el.getAttribute('aria-label') || ''
+      } ${el.getAttribute('title') || ''}`;
+      const selfHint = /skip|preroll|pre-?roll/i.test(hint);
       if (!SKIP_TEXT.test(label) && !selfHint) continue;
       if (!isVisible(el)) continue;
+
       el.click();
       STATS.skips += 1;
       break; // Um clique por ciclo; o intervalo tenta de novo se preciso.
@@ -155,8 +225,11 @@
   }
 
   function start() {
+    // Sinaliza ao page script (mundo MAIN) que o toggle está ligado.
+    if (document.documentElement) {
+      document.documentElement.dataset.betelgeuseEnabled = '1';
+    }
     injectCss();
-    injectPageScript();
     sweep(document);
     observe();
     setInterval(autoSkip, 1000);

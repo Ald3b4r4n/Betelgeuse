@@ -1,14 +1,41 @@
 {
   "manifest_version": 3,
   "name": "Betelgeuse",
-  "version": "0.3.1",
-  "description": "Bloqueia anúncios (pre-roll, overlays, banners e popups) em xvideos.com.",
+  "version": "0.4.0",
+  "description": "Bloqueia anúncios e limpa o histórico em sites adultos selecionados.",
   "homepage_url": "https://github.com/Ald3b4r4n/Betelgeuse",
-  "minimum_chrome_version": "88",
+  "minimum_chrome_version": "111",
   "permissions": ["declarativeNetRequest", "storage", "history", "alarms"],
-  "host_permissions": ["*://*.xvideos.com/*"],
+  "host_permissions": [
+    "*://*.xvideos.com/*",
+    "*://*.pornhub.com/*",
+    "*://*.xhamster.com/*",
+    "*://*.xhamster.desi/*",
+    "*://*.xnxx.com/*",
+    "*://*.redtube.com/*",
+    "*://*.youporn.com/*",
+    "*://*.spankbang.com/*",
+    "*://*.beeg.com/*",
+    "*://*.txxx.com/*",
+    "*://*.hqporner.com/*",
+    "*://*.eporner.com/*",
+    "*://*.tube8.com/*",
+    "*://*.thumbzilla.com/*",
+    "*://*.porn.com/*",
+    "*://*.motherless.com/*",
+    "*://*.sexvid.xxx/*",
+    "*://*.porn300.com/*",
+    "*://*.missav.com/*",
+    "*://*.hanime.tv/*",
+    "*://*.chaturbate.com/*",
+    "*://*.stripchat.com/*",
+    "*://*.cam4.com/*",
+    "*://*.bongacams.com/*",
+    "*://*.livejasmin.com/*"
+  ],
   "background": {
-    "service_worker": "src/background.js"
+    "service_worker": "src/background.js",
+    "type": "module"
   },
   "declarative_net_request": {
     "rule_resources": [
@@ -21,16 +48,69 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.xvideos.com/*"],
+      "matches": [
+        "*://*.xvideos.com/*",
+        "*://*.pornhub.com/*",
+        "*://*.xhamster.com/*",
+        "*://*.xhamster.desi/*",
+        "*://*.xnxx.com/*",
+        "*://*.redtube.com/*",
+        "*://*.youporn.com/*",
+        "*://*.spankbang.com/*",
+        "*://*.beeg.com/*",
+        "*://*.txxx.com/*",
+        "*://*.hqporner.com/*",
+        "*://*.eporner.com/*",
+        "*://*.tube8.com/*",
+        "*://*.thumbzilla.com/*",
+        "*://*.porn.com/*",
+        "*://*.motherless.com/*",
+        "*://*.sexvid.xxx/*",
+        "*://*.porn300.com/*",
+        "*://*.missav.com/*",
+        "*://*.hanime.tv/*",
+        "*://*.chaturbate.com/*",
+        "*://*.stripchat.com/*",
+        "*://*.cam4.com/*",
+        "*://*.bongacams.com/*",
+        "*://*.livejasmin.com/*"
+      ],
       "js": ["src/content.js"],
       "run_at": "document_start",
       "all_frames": false
-    }
-  ],
-  "web_accessible_resources": [
+    },
     {
-      "resources": ["src/page.js"],
-      "matches": ["*://*.xvideos.com/*"]
+      "matches": [
+        "*://*.xvideos.com/*",
+        "*://*.pornhub.com/*",
+        "*://*.xhamster.com/*",
+        "*://*.xhamster.desi/*",
+        "*://*.xnxx.com/*",
+        "*://*.redtube.com/*",
+        "*://*.youporn.com/*",
+        "*://*.spankbang.com/*",
+        "*://*.beeg.com/*",
+        "*://*.txxx.com/*",
+        "*://*.hqporner.com/*",
+        "*://*.eporner.com/*",
+        "*://*.tube8.com/*",
+        "*://*.thumbzilla.com/*",
+        "*://*.porn.com/*",
+        "*://*.motherless.com/*",
+        "*://*.sexvid.xxx/*",
+        "*://*.porn300.com/*",
+        "*://*.missav.com/*",
+        "*://*.hanime.tv/*",
+        "*://*.chaturbate.com/*",
+        "*://*.stripchat.com/*",
+        "*://*.cam4.com/*",
+        "*://*.bongacams.com/*",
+        "*://*.livejasmin.com/*"
+      ],
+      "js": ["src/page.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
     }
   ],
   "action": {

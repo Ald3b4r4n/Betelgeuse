@@ -31,7 +31,7 @@
     const id = tabs && tabs[0] ? tabs[0].id : undefined;
     if (id === undefined) return;
     chrome.tabs.sendMessage(id, { type: 'betelgeuse-stats' }, (resp) => {
-      if (chrome.runtime.lastError || !resp) return; // Fora do xvideos: mantém "–".
+      if (chrome.runtime.lastError || !resp) return; // Fora dos sites suportados: mantém "–".
       elHidden.textContent = String(resp.hidden);
       elSkips.textContent = String(resp.skips);
       elPopups.textContent = String(resp.popupsBlocked);

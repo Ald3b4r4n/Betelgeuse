@@ -2,181 +2,1844 @@
   {
     "id": 1,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
       "urlFilter": "vast",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "other"
+      ]
     }
   },
   {
     "id": 2,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
       "urlFilter": "vmap",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "other"
+      ]
     }
   },
   {
     "id": 3,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "doubleclick",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||trafficjunky.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 4,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "googlesyndication",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||trafficjunky.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 5,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "exoclick",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||exoclick.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 6,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "trafficjunky",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||exoclick.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 7,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "trafficstars",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||exosrv.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 8,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "popads",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||realsrv.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 9,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "popcash",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||juicyads.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 10,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "adnxs",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||juicyads.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 11,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "criteo",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||adsterra.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 12,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "outbrain",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||adsterra.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 13,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "taboola",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||clickadu.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 14,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "mgid",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||hilltopads.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 15,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "adservice",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||hilltopads.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 16,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "adsrv",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||trafficstars.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 17,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "sponsored",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||trafficfactory.biz^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   },
   {
     "id": 18,
     "priority": 1,
-    "action": { "type": "block" },
+    "action": {
+      "type": "block"
+    },
     "condition": {
-      "urlFilter": "propellerads",
-      "initiatorDomains": ["xvideos.com"],
-      "resourceTypes": ["script", "xmlhttprequest", "sub_frame", "image", "media", "other"]
+      "urlFilter": "||popads.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||popcash.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||propellerads.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||propellerpops.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||doubleclick.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googlesyndication.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||googleadservices.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adnxs.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||criteo.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||taboola.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||outbrain.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||mgid.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||adsrvr.org^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||rubiconproject.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||pubmatic.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||openx.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||smartadserver.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||teads.tv^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||spotxchange.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||springserve.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||amazon-adsystem.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||media.net^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||revcontent.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "urlFilter": "||zergnet.com^",
+      "initiatorDomains": [
+        "xvideos.com",
+        "pornhub.com",
+        "xhamster.com",
+        "xhamster.desi",
+        "xnxx.com",
+        "redtube.com",
+        "youporn.com",
+        "spankbang.com",
+        "beeg.com",
+        "txxx.com",
+        "hqporner.com",
+        "eporner.com",
+        "tube8.com",
+        "thumbzilla.com",
+        "porn.com",
+        "motherless.com",
+        "sexvid.xxx",
+        "porn300.com",
+        "missav.com",
+        "hanime.tv",
+        "chaturbate.com",
+        "stripchat.com",
+        "cam4.com",
+        "bongacams.com",
+        "livejasmin.com"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest",
+        "sub_frame",
+        "image",
+        "media",
+        "other"
+      ]
     }
   }
 ]
